@@ -14,8 +14,6 @@ namespace MyTetris
         Blockcell
     }
 
-
-
     class Cells
     {
         private CellsType celltype;
@@ -62,6 +60,9 @@ namespace MyTetris
             }
         }
 
+        /// <summary>
+        /// проверка на границу или блок
+        /// </summary>
         public bool pBorderorblock
         {
             get

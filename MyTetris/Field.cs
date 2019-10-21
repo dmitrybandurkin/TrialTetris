@@ -73,14 +73,14 @@ namespace MyTetris
             lines = 0;
             score = 0;
 
-            initField();
-            fillField();
+            InitField();
+            FillField();
         }
 
         /// <summary>
         /// инициализация поля массивом элементов типа Cells
         /// </summary>
-        private void initField()
+        private void InitField()
         {
             field = new Cells[fieldrows][];
 
@@ -93,7 +93,7 @@ namespace MyTetris
         /// <summary>
         /// заполнение поля элементами: пустыми ячейками и границей
         /// </summary>
-        private void fillField()
+        private void FillField()
         {
             for (int i = 0; i < fieldrows - 1; i++)
             {

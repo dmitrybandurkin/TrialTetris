@@ -7,6 +7,9 @@ using System.Timers;
 
 namespace MyTetris
 {
+    /// <summary>
+    /// Направление движения
+    /// </summary>
     public enum Directions
     {
         Left,
@@ -27,8 +30,8 @@ namespace MyTetris
 
         private Tetramino currenttetramino;
 
-        private int shift;
-        private int lines;
+        private int shift; // сдвиг фигуры
+        private int lines; // подсчет линий и очков
         private int score;
 
         Timer timer;
@@ -128,7 +131,6 @@ namespace MyTetris
 
                     if (PossibilitytoChange(shift, 0, currenttetramino))
                     {
-
                         Shift(shift);
                     }
 
@@ -163,7 +165,13 @@ namespace MyTetris
             PlaceTetramino(true);
         }
 
-
+        /// <summary>
+        /// проверка на возможность движения/вращения
+        /// </summary>
+        /// <param name="shift"></param>
+        /// <param name="down"></param>
+        /// <param name="tetramino"></param>
+        /// <returns></returns>
         private bool PossibilitytoChange(int shift, int down, Tetramino tetramino)
         {
             for (int i = 0; i < 4; i++)
@@ -348,6 +356,16 @@ namespace MyTetris
             }
             else
             {
+
+                // изначально предполагалось так: 
+
+                //for (int i = 0; i < 4; i++)
+                //{
+                //    board.field[currenttetramino.tetrids[i].pRow][currenttetramino.tetrids[i].pColumn].pCelltype = CellsType.Emptycell;
+                //}
+
+                //но что-то пошло наперекосяк. Поэтому использовал очистку всей игровой области:
+
                 for (int i = 0; i < board.pfieldrows - 1; i++)
                 {
                     for (int j = 1; j < board.pfieldcolumns - 1; j++)

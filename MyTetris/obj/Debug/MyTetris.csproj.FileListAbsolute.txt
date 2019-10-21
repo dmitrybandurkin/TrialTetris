@@ -4,3 +4,9 @@ E:\Lessons\lessons C#\MyTetris\MyTetris\bin\Debug\MyTetris.pdb
 E:\Lessons\lessons C#\MyTetris\MyTetris\obj\Debug\MyTetris.csprojAssemblyReference.cache
 E:\Lessons\lessons C#\MyTetris\MyTetris\obj\Debug\MyTetris.exe
 E:\Lessons\lessons C#\MyTetris\MyTetris\obj\Debug\MyTetris.pdb
+E:\Lessons\git\MyTetris\bin\Debug\MyTetris.exe.config
+E:\Lessons\git\MyTetris\bin\Debug\MyTetris.exe
+E:\Lessons\git\MyTetris\bin\Debug\MyTetris.pdb
+E:\Lessons\git\MyTetris\obj\Debug\MyTetris.csprojAssemblyReference.cache
+E:\Lessons\git\MyTetris\obj\Debug\MyTetris.exe
+E:\Lessons\git\MyTetris\obj\Debug\MyTetris.pdb
